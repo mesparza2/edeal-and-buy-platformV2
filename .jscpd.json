@@ -1,0 +1,15 @@
+{
+  "threshold": 3,
+  "minTokens": 100,
+  "format": ["csharp", "typescript", "markup", "scss"],
+  "gitignore": true,
+  "ignore": [
+    "**/Migrations/**",
+    "**/*.spec.ts",
+    "**/package-lock.json",
+    "**/.angular/**",
+    "**/dist/**",
+    "docs/**"
+  ],
+  "reporters": ["console"]
+}

@@ -70,3 +70,16 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Puertas de calidad del Anexo C: duplicación < 3 % y tamaño de archivo del frontend.
+  # Los límites de archivo (500) y método (60) del backend los aplica el compilador (SonarLint.xml).
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node scripts/check-file-size.mjs
+      - name: Duplicación de código (umbral en .jscpd.json)
+        run: npx --yes jscpd@5.4.3 .
