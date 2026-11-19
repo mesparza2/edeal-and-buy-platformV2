@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EDealBuy.Api/EDealBuy.Api.csproj" />
+    <Project Path="src/EDealBuy.Domain/EDealBuy.Domain.csproj" />
+    <Project Path="src/EDealBuy.Infrastructure/EDealBuy.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EDealBuy.Api.Tests/EDealBuy.Api.Tests.csproj" />
+  </Folder>
+</Solution>

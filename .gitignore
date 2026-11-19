@@ -1,0 +1,83 @@
+# =========================
+# Claude Code / asistentes de IA
+# =========================
+.claude/
+.claude-*/
+CLAUDE.md
+CLAUDE.local.md
+leyes-*.md
+
+# =========================
+# .NET: compilación
+# =========================
+[Bb]in/
+[Oo]bj/
+*.pdb
+[Tt]est[Rr]esult*/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# =========================
+# Visual Studio / editores
+# =========================
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.sln.docstates
+
+# =========================
+# Publicación
+# =========================
+[Pp]ublish/
+**/app.publish/
+**/PublishProfiles/
+*.pubxml
+*.publishsettings
+deploy-package/
+
+# =========================
+# Paquetes
+# =========================
+packages/
+*.nupkg
+*.snupkg
+
+# =========================
+# Secretos y configuración local (nunca al repositorio)
+# =========================
+*.secrets.json
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.local.json
+
+# =========================
+# Angular / Node
+# =========================
+node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/out-tsc/
+npm-debug.log*
+yarn-error.log*
+
+# Build de Angular copiado a wwwroot al publicar: se genera, no se versiona.
+# La carpeta debe existir en disco (.gitkeep) porque WebApplication.CreateBuilder() falla si falta.
+backend/src/*/wwwroot/*
+!backend/src/*/wwwroot/.gitkeep
+
+# =========================
+# Archivos temporales y de sistema
+# =========================
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.log
+*.cache
