@@ -1,0 +1,11 @@
+root = true
+
+[*.cs]
+# Solo se aplican las reglas de calidad elegidas: se apagan los analizadores por defecto y se activan solo estas.
+dotnet_analyzer_diagnostic.severity = none
+dotnet_diagnostic.S104.severity = error
+dotnet_diagnostic.S138.severity = error
+
+# El código generado (migraciones de EF) no cuenta para los límites.
+[**/Migrations/*.cs]
+generated_code = true
