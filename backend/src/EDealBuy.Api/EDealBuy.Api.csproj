@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.15" />
+    <PackageReference Include="Serilog.AspNetCore" Version="11.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- Local secrets never go into the publish package. -->
+    <!-- Los secretos locales nunca van al paquete de publicación. -->
     <Content Update="*.secrets.json" CopyToPublishDirectory="Never" />
   </ItemGroup>
 

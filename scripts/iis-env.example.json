@@ -1,0 +1,9 @@
+{
+  "site": "Default Web Site/EDealBuy",
+  "appPool": "EDealBuy",
+  "variables": {
+    "ASPNETCORE_ENVIRONMENT": "Production",
+    "ConnectionStrings__Default": "Data Source=SERVER;Initial Catalog=EDealBuy;User ID=edealbuy_app;Password=...;Encrypt=True",
+    "Logs__Directory": "D:\Logs\EDealBuy"
+  }
+}

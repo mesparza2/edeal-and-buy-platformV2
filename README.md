@@ -1,25 +1,25 @@
 # eDeal&Buy Platform V2
 
-Rewrite of `SistemaInventarioSupplyChain` on the new stack: .NET 10 (LTS) Web API + Angular. Plan and scope in `docs/`.
+Reescritura de `SistemaInventarioSupplyChain` sobre el stack nuevo: Web API en .NET 10 (LTS) + Angular. Plan y alcance en `docs/`.
 
-## Structure
+## Estructura
 
 ```
 backend/    EDealBuy.slnx · src/{EDealBuy.Api, EDealBuy.Domain, EDealBuy.Infrastructure} · tests/
-frontend/   Angular (standalone components)
-scripts/    deploy-package.ps1 (IIS package: API + SPA in wwwroot)
-docs/       migration plan, out-of-scope backlog
+frontend/   Angular (componentes standalone)
+scripts/    deploy-package.ps1 (paquete para IIS: API + SPA en wwwroot)
+docs/       plan de migración, pendientes fuera de alcance
 ```
 
-## Run
+## Ejecutar
 
 ```powershell
 cd backend; dotnet run --project src/EDealBuy.Api     # API
-cd frontend; npm start                                 # Angular dev server
+cd frontend; npm start                                 # servidor de desarrollo de Angular
 ```
 
-Local secrets go in `backend/src/EDealBuy.Api/appsettings.secrets.json` (git-ignored). Health check: `GET /health`.
+Los secretos locales van en `backend/src/EDealBuy.Api/appsettings.secrets.json` (ignorado por git). Salud: `GET /health`.
 
-## Requirements
+## Requisitos
 
-.NET SDK 10 (pinned in `backend/global.json`), Node 24, npm 11.
+.NET SDK 10 (fijado en `backend/global.json`), Node 24, npm 11.
